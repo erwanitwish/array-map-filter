@@ -42,8 +42,33 @@ Expected OUTPUT for this sample
 
 */
 
+foods = [
+  {
+    food: 'Bacon',
+    isVegetarian: false
+  },
+  {
+    food: 'Sausage',
+    isVegetarian: false
+  },
+  {
+    food: 'Tofu',
+    isVegetarian: true
+  },
+  {
+    food: 'Chick Pea',
+    isVegetarian: true
+  }
+]
+
 function getFoodCategories(foods) {
+  const result = foods.map(elt => {
+  return (elt.isVegetarian ? `${elt.food} is suitable for vegetarians` : `${elt.food} is not suitable for vegetarians`)
+ })
+ return result
 }
+
+
 
 
 

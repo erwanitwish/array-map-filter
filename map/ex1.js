@@ -25,9 +25,44 @@ Expected OUTPUT for this sample array:
   ]
 
 */
+// array1 =   [
+//     'Chicken',
+//     'Bacon',
+//     'Tofu',
+//     'Mayonnaise'
+//   ]
+//
+// // function getStringsLength(strings) {
+// //   return strings.legth;
+// // }
+// const stringLength = array1.map(function(strings) {
+//   return strings.length;
+// }
 
-function getStringsLength(strings) {
-}
+array1 =   [
+    'Chicken',
+    'Bacon',
+    'Tofu',
+    'Mayonnaise'
+  ]
+
+ function getStringsLength(strings) {
+   const stringLength = strings.map(elt => {
+     return elt + " contains " + elt.length + " characters"
+   });
+   return stringLength;
+ }
+
+//  function getStringsLength(strings) {
+//    return strings + " contains " + strings.length + " characters";
+//  }
+//
+//
+// const stringLength = array1.map(getStringsLength);
+//
+// console.log(stringLength);
+
+
 
 // If you need, you can always visualize the result with a console.log.
 // In that case, uncomment the line below (you can also add your own
